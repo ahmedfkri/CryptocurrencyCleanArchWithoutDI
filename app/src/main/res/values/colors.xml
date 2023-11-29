@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="DarkGray">#FF202020</color>
+    <color name="MediumGray">#FF505050</color>
+    <color name="ColorPrimary">#FF08FF04</color>
+    <color name="TextWhite">#FFEEEEEE</color>
 </resources>
