@@ -9,7 +9,9 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.cryptocurrencycleanarch.R
 import com.example.cryptocurrencycleanarch.core.Resource
 import com.example.cryptocurrencycleanarch.databinding.FragmentCoinsListBinding
 import com.example.cryptocurrencycleanarch.presentation.adapters.CoinAdapter
@@ -39,6 +41,18 @@ class CoinsListFragment : Fragment() {
 
         coinAdapter.setOnItemClickListener {
             Toast.makeText(activity, it.name, Toast.LENGTH_SHORT).show()
+
+            val bundle = Bundle().apply{
+                putString("coinId",it.id)
+            }
+
+           findNavController().navigate(
+               R.id.action_coinsListFragment_to_coinDetailFragment,
+               bundle
+           )
+            //TODO: Send coin id to coinDetailFragment and
+            //TODO:write the use case to get coin details
+            //TODO:write the viewModel
         }
 
         lifecycleScope.launch {

@@ -18,5 +18,9 @@
         android:id="@+id/coinDetailFragment"
         android:name="com.example.cryptocurrencycleanarch.presentation.ui.CoinDetailFragment"
         android:label="fragment_coin_detail"
-        tools:layout="@layout/fragment_coin_detail" />
+        tools:layout="@layout/fragment_coin_detail" >
+        <argument
+            android:name="coinId"
+            app:argType="string" />
+    </fragment>
 </navigation>

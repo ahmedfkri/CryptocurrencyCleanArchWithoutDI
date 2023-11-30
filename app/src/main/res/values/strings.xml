@@ -2,4 +2,6 @@
     <string name="app_name">CryptocurrencyCleanArch</string>
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tags">Tags</string>
+    <string name="team_members">Team members</string>
 </resources>
