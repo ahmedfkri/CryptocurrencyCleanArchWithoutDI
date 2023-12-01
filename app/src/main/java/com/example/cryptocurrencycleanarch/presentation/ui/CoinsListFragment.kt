@@ -50,9 +50,6 @@ class CoinsListFragment : Fragment() {
                R.id.action_coinsListFragment_to_coinDetailFragment,
                bundle
            )
-            //TODO: Send coin id to coinDetailFragment and
-            //TODO:write the use case to get coin details
-            //TODO:write the viewModel
         }
 
         lifecycleScope.launch {

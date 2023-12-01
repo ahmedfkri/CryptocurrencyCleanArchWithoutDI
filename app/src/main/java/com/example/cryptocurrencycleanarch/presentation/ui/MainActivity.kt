@@ -41,6 +41,5 @@ class MainActivity : AppCompatActivity() {
             .get(CoinViewModel::class.java)
 
 
-
     }
 }

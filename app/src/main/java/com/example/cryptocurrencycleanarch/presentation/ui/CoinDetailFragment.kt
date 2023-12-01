@@ -61,7 +61,6 @@ class CoinDetailFragment : Fragment() {
                             val sympol= coinDetail?.symbol
                             txtRank.text = "$rank."
                             txtSympol.text = "($sympol)"
-
                             tagAdapter.tagsList = coinDetail?.tags ?: emptyList()
                             tagAdapter.notifyDataSetChanged()
 
